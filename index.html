@@ -4,79 +4,103 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Veydrix — The Future of Connection</title>
+  <meta name="description" content="Veydrix — privacy-first global social platform. Join waitlist. Advertise. Invest." />
+  <meta property="og:title" content="Veydrix — The Future of Connection" />
+  <meta property="og:description" content="Privacy-first, human-centered social platform. Launching 31 Oct, 12PM." />
+  <meta property="og:image" content="./assets/logos/logoveydrix-logo.png" />
   <link rel="stylesheet" href="./style.css">
-  <meta name="theme-color" content="#04050a">
 </head>
 <body>
   <main class="page">
+    <!-- HERO (dark, powerful) -->
     <header class="hero" id="hero">
-      <div class="bg-orbit" aria-hidden="true"></div>
+      <div class="hero-bg" aria-hidden="true"></div>
       <div class="hero-inner">
-        <img class="logo" src="./assets/logos/logoveydrix-logo.png" alt="Veydrix logo">
-        <h1 class="brand">The Future of Connection</h1>
-        <p class="subtitle">A privacy-first, human-centered global platform — launching soon.</p>
+        <img class="logo" src="./assets/logos/logoveydrix-logo.png" alt="Veydrix logo" />
+        <h1 class="brand">VEYDRIX</h1>
+        <p class="lead">The Future of Connection — privacy-first, people-centered, global.</p>
 
-        <div class="countdown-wrap" aria-live="polite">
-          <div id="countdown" class="countdown" role="timer" aria-atomic="true"></div>
-        </div>
+        <div id="countdown" class="countdown" aria-live="polite"></div>
 
-        <form id="notifyForm" class="signup-form" action="https://formspree.io/f/xpwydjne" method="POST" aria-label="Join waitlist">
-          <input id="email" name="email" type="email" placeholder="Your email" required />
-          <button type="submit" class="btn-primary">Join Waitlist</button>
+        <form id="notifyForm" class="signup-form" action="https://formspree.io/f/xpwydjne" method="POST" novalidate>
+          <input id="email" name="email" type="email" placeholder="Your email" required autocomplete="email" />
+          <button class="btn-primary" type="submit">Join Waitlist</button>
           <p id="form-message" class="form-message" aria-live="polite"></p>
         </form>
 
-        <div class="quick-ctas">
-          <a class="btn-ghost" href="./guides/Veydrix_Pitch_Deck.pdf" download>Investor Deck</a>
-          <a class="btn-ghost" href="./guides/Veydrix_Advertise_OnePager.pdf" download>Advertise</a>
+        <div class="hero-links">
+          <a class="btn-ghost" href="./guides/Veydrix_Pitch_Deck.pdf" download>Download Pitch Deck</a>
+          <a class="btn-ghost" href="./guides/Veydrix_Advertise_OnePager.pdf" download>Advertise with us</a>
         </div>
       </div>
     </header>
 
-    <section class="features" id="about">
+    <!-- ABOUT -->
+    <section class="section about" id="about">
       <div class="container">
         <h2>About Veydrix</h2>
-        <p>Veydrix builds safer, faster, and more meaningful social experiences — engineered for global scale and real human connection.</p>
+        <p class="muted">We build safer, faster and more meaningful social experiences. Privacy is core; communities and creators thrive.</p>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section features" id="features">
+      <div class="container">
         <div class="cards">
-          <article class="card">🔒 <strong>Privacy-First</strong><span>Data you control.</span></article>
-          <article class="card">⚡ <strong>Performance</strong><span>Fast, modern, secure.</span></article>
-          <article class="card">🌍 <strong>Global Reach</strong><span>Localized & inclusive.</span></article>
+          <div class="card"><strong>Privacy-First</strong><span>Data you control.</span></div>
+          <div class="card"><strong>Performance</strong><span>Fast and modern.</span></div>
+          <div class="card"><strong>Creator Tools</strong><span>Monetize and grow.</span></div>
         </div>
       </div>
     </section>
 
-    <section class="team" id="team">
+    <!-- INVESTORS (light, stands out) -->
+    <section class="section investors" id="investors">
       <div class="container">
-        <h2>Team & Vision</h2>
-        <div class="team-inner">
-          <div class="portrait-wrap">
-            <img src="./assets/portrait/founder.jpg" alt="Salim Babangida — Founder" class="portrait">
-            <div class="portrait-glow"></div>
+        <div class="split">
+          <div class="left">
+            <h2>Investor Opportunities</h2>
+            <p class="muted dark">We’re building a privacy-first global social platform with clear monetization and fast product velocity.</p>
+            <ul class="bullets">
+              <li><strong>Large market:</strong> billions of users worldwide.</li>
+              <li><strong>Monetization:</strong> ads, creator tools, premium.</li>
+              <li><strong>Visionary team:</strong> founder-led, privacy-first roadmap.</li>
+            </ul>
+            <div class="cta-row">
+              <a class="cta btn-gold" href="./guides/Veydrix_Pitch_Deck.pdf" download>Download Investor Deck</a>
+              <a class="cta btn-outline" href="mailto:hello@veydrix.app?subject=Investor%20Interest">Request Meeting</a>
+            </div>
           </div>
-          <div class="team-text">
-            <h3>Salim Babangida</h3>
-            <p class="role">Founder & CEO</p>
-            <p class="quote">“We’re building a platform that puts people first — privacy, fairness and global community at scale.”</p>
+          <div class="right">
+            <div class="card-light">
+              <img src="./assets/portrait/founder.jpg" alt="Salim Babangida" class="founder" />
+              <h3>Salim Babangida</h3>
+              <p class="role">Founder & CEO</p>
+              <p class="quote">“We put privacy and community at the center — scale without compromise.”</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="biz" id="partners">
+    <!-- ADVERTISERS (light, business-focused) -->
+    <section class="section advertisers" id="advertise">
       <div class="container">
-        <h2>For Investors & Advertisers</h2>
-        <p class="lead">We welcome visionary partners and brands to join our growth. Contact <a href="mailto:hello@veydrix.app">hello@veydrix.app</a></p>
+        <h2>Advertise on Veydrix</h2>
+        <p class="muted dark">Manufacturers and brands: reach engaged communities with transparent reporting and AI-powered targeting.</p>
         <div class="biz-grid">
-          <div class="biz-card">
-            <h4>Invest</h4><p>Partner with us to scale a privacy-first global network.</p>
-          </div>
-          <div class="biz-card">
-            <h4>Advertise</h4><p>Showcase products to engaged communities with transparent measurement.</p>
-          </div>
+          <div class="biz-card"><strong>Targeting</strong><p>Privacy-safe audience tools.</p></div>
+          <div class="biz-card"><strong>Measurement</strong><p>Clear, transparent metrics.</p></div>
+          <div class="biz-card"><strong>Partnerships</strong><p>Creator & brand collaborations.</p></div>
+        </div>
+        <div class="cta-row" style="margin-top:18px;">
+          <a class="cta btn-primary" href="./guides/Veydrix_Advertise_OnePager.pdf" download>Download Advertiser One-Pager</a>
+          <a class="cta btn-outline" href="mailto:hello@veydrix.app?subject=Advertising%20Opportunity">Partner With Us</a>
         </div>
       </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="site-footer">
       <div class="container foot-inner">
         <div>© 2025 Veydrix — <a href="./guides/privacy.pdf" download>Privacy</a> • <a href="./guides/terms.pdf" download>Terms</a></div>
