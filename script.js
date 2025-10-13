@@ -1,4 +1,4 @@
-// TARGET: 31 Oct 2025 12:00 (Africa/Lagos) -> UTC 11:00
+// TARGET: 30 Nov 2025 12:00 (Africa/Lagos) -> UTC 11:00
 const TARGET = Date.UTC(2025,9,31,11,0,0);
 
 function pad(n){return String(n).padStart(2,'0');}
